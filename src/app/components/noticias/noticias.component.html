@@ -1,0 +1,16 @@
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12"
+             size-lg="6"
+             size-md="4"
+             size-sm="6"
+             size-xs="12"
+             *ngFor="let item of noticias; let i= index">
+      <app-noticia [item]="item"
+                   [indice]="i"
+                   [enFavoritos]="enFavoritos"></app-noticia>
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>
