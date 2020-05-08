@@ -4,7 +4,7 @@ import { RespuestaTopHeadlines } from '../interfaces/interfaces';
 import { environment } from '../../environments/environment.prod';
 
 let pais = 'us';
-const url = 'http://newsapi.org/v2/top-headlines';
+const url = 'https://newsapi.org/v2/top-headlines';
 let urlPais = '?country=' + pais;
 const headers = new HttpHeaders({
   'X-Api-key': environment.apiKey
